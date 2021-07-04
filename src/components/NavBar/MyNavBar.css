@@ -1,0 +1,12 @@
+.MyNavBar{
+    border: solid 2px yellow; 
+}
+
+.MyNavBar > * {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.searchInput {
+    width: 50% ! important ;
+}

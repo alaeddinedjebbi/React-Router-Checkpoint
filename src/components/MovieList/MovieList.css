@@ -1,0 +1,12 @@
+.MovieList {
+    display: flex;
+    justify-content: center;
+    color: red;
+    flex-wrap: wrap;
+    
+}
+.listesdesfilms {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+}
