@@ -11,14 +11,14 @@ function NavBar ({ getSearchInput, getRateInput }) {
 
   
   const handleSearch = (e) => {
-    setSearchInput (e.target.value)
+    getSearchInput (e.target.value)
   }
     return (
   <div>
     <Navbar bg="primary" variant="dark" className="MyNavBar">
     <Navbar.Brand href="#home">Club Cinéma Go My Code Béja</Navbar.Brand>
     <Form inline>
-      <FormControl type="text" placeholder="Search" className="mr-sm-2" className="searchInput" onChange={handleSearch} />
+      <FormControl type="text" placeholder="Search" className="mr-sm-2 searchInput" onChange={handleSearch} />
       <ReactStars
         count={5}
         onChange={ratingChanged}

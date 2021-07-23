@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactStars from 'react-stars'
 import { Card, Button } from 'react-bootstrap'
+import { Link} from 'react-router-dom'
 
 function MovieCard({ movie }) {
     return (
@@ -26,7 +27,9 @@ function MovieCard({ movie }) {
             />
             </Card.Body>
             <Card.Footer>
-            <Button variant="primary">Télécharger</Button>
+            <Link to={`/description/${movie.id}`}>
+            <Button variant="primary">Watch Trailer</Button>
+            </Link>
             </Card.Footer>
             </Card>
 
